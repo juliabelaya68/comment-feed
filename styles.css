@@ -1,6 +1,9 @@
 body {
     margin: 0;
   }
+  *{
+    box-sizing: border-box;
+  }
 
   .container {
     font-family: Helvetica;
@@ -107,8 +110,9 @@ body {
   }
 
   .add-form-name {
-    width: 300px;
+    width: 540px;
     padding: 11px 22px;
+    margin-top: 12px;
   }
 
   .add-form-text {
@@ -138,4 +142,70 @@ body {
 
   .-error {
     border: 1px solid red;
+  }
+
+  .link-login {
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer;
+  }
+  
+  .link-login:hover {
+    text-decoration: underline;
+  }
+
+  .login-title {
+    font-size: 16px;
+  }
+
+
+
+  .add-form-name {
+    width: 540px;
+    padding: 11px 22px;
+    margin-bottom: bold;
+  }
+
+  .add-form-name:read-only {
+    background-color: #d2ddd2;
+    color: #363636;
+    font-weight: bold;
+  }
+
+
+  .add-form-button-link {
+    text-align: center;
+    padding-top: 22px;
+    color: white;
+    cursor: pointer;
+    border-bottom: inherit;
+  }
+
+  .add-form-button-main {
+    width: 100%;
+    margin-top: 24px;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #bcec30;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  .add-form-button-exit {
+    width: 50px;
+    margin-left: auto;
+    font-size: 12px;
+    background-color: #acb78b;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+  }
+
+  .add-form-registry{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: none;
+    padding-left: 0;
   }

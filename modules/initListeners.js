@@ -12,16 +12,16 @@ export const initLikeListeners = (renderComments) => {
             const index=likeButton.dataset.index;
             const comment = comments[index];
     
-            comment.likes = comment.isLaked
+            comment.likes = comment.isLiked
             ? comment.likes - 1
             : comment.likes + 1;
-            comment.isLaked = !comment.isLaked;
+            comment.isLiked = !comment.isLiked;
             renderComments();
           });
         }
 }
 
-export const initRepListeners = () => {
+export const initReplyListeners = () => {
     const text = document.querySelector(".add-form-text");
     const commentsElements = document.querySelectorAll(".comment");
 
@@ -65,7 +65,7 @@ export const initAddCommentListener = (renderComments) => {
         document.querySelector('.form-loading').style.display = 'none'
         document.querySelector(".add-form").style.display ='flex'
 
-        if (error.message === "Faild to fetch") {
+        if (error.message === "Failed to fetch") {
           alert ("Нет интернета, попробуйте снова")
         }
 
